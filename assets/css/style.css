@@ -33,7 +33,7 @@ p {
   margin: 0;
 }
 
-header {
+header aside {
   padding: 15px 6% 15px 0;
   display: flex;
   flex-direction: row;
@@ -45,9 +45,10 @@ header {
 }
 
 header h1 {
-  color: var(--tertiary);
+  display: left;
+  color: var(--primary);
   background-color: var(--secondary);
-  padding: 5px 1% 5px 6%;
+  padding: 5px 1% 5px;
   margin: 0;
   font-size: 4vw;
   line-height: 1;
@@ -98,6 +99,7 @@ main {
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
+  filter:opacity(75%);
 }
 
 .hero-banner div {
@@ -109,8 +111,7 @@ main {
   color: var(--secondary);
   margin: 0;
   padding: 5px 10px;
-  border: solid var(--secondary);
-  border-radius: 5px;
+  border-right: solid var(--secondary);
   font-size: 2.3rem;
   line-height: 1.2;
   display: inline;
@@ -178,10 +179,10 @@ main {
   padding: 0 0 20px 0;
   margin: 0.5em;
   text-decoration: none;
-  background-blend-mode: soft-light;
   background-size: 150%;
   transition: all 0.5s;
   font-size: 0.9rem;
+  filter: opacity(50%);
 }
 
 /* feature first portfolio item */
@@ -192,6 +193,7 @@ main {
 
 .flex-item:hover {
   background-color: rgba(0, 0, 0, 0.3);
+  filter: opacity(100%);
 }
 
 .flex-item div {
@@ -212,12 +214,12 @@ main {
 }
 
 .contact address a {
-  color: var(--tertiary);
+  color: var(--secondary);
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
   font-style: normal;
-  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -228,7 +230,7 @@ main {
 
 .contact address a:hover {
   background-size: 100% 88%;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 /* portfolio project images */
