@@ -36,7 +36,7 @@ p {
 header aside {
   padding: 15px 6% 15px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -45,12 +45,22 @@ header aside {
 }
 
 header h1 {
-  display: left;
+  display: flex;
   color: var(--primary);
   background-color: var(--secondary);
   padding: 5px 1% 5px;
   margin: 0;
   font-size: 4vw;
+  line-height: 1;
+}
+
+header h2 {
+  display: flex;
+  color: var(--primary);
+  background-color: var(--secondary);
+  padding: 5px 1% 5px;
+  margin: 0;
+  font-size: 1.5vw;
   line-height: 1;
 }
 
@@ -89,7 +99,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url(/assets/images/software-engineer-hero.jpg), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url(../images/software-engineer-hero.jpg), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   min-height: 30vh;
@@ -100,21 +110,6 @@ main {
   align-items: flex-end;
   text-align: right;
   filter:opacity(75%);
-}
-
-.hero-banner div {
-  flex: 0 0 90%;
-}
-
-.hero-banner h2 {
-  background-color: transparent;
-  color: var(--secondary);
-  margin: 0;
-  padding: 5px 10px;
-  border-right: solid var(--secondary);
-  font-size: 2.3rem;
-  line-height: 1.2;
-  display: inline;
 }
 
 .page-wrapper {
@@ -239,13 +234,18 @@ main {
 
 /* portfolio project images */
 .study-guide {
-  background-image: url(/assets/images/github-universe.png);
+  background-image: url(../assets/images/github-universe.png);
   background-size: cover;
 }
 
 .under-construction {
-  background-image: url(/assets/images/under-construction.png);
+  display: flex;
+  background-image: url(../assets/images/under-construction.png);
   background-size: contain;
+}
+
+#resume div img {
+  padding-left: 13%;
 }
 
 /* end portfolio project images */
@@ -275,7 +275,7 @@ main {
 
   .page-section > h2 {
     border-right: none;
-    border-bottom: 4px solid var(--primary);
+    border-bottom: 4px solid var(--secondary);
     margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: left;
