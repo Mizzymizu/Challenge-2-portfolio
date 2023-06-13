@@ -233,6 +233,10 @@ main {
   color: var(--primary);
 }
 
+#icons {
+  font-size: 4vw;
+}
+
 /* portfolio project images */
 .study-guide {
   background-image: url(/assets/images/github-universe.png);
@@ -241,7 +245,7 @@ main {
 
 .under-construction {
   background-image: url(/assets/images/under-construction.png);
-  background-size: cover;
+  background-size: contain;
 }
 
 /* end portfolio project images */
