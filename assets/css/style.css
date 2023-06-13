@@ -239,20 +239,9 @@ main {
   background-size: cover;
 }
 
-.led-wall {
-  background-image: url()
-}
-
-.react-calc {
-  background-image: url()
-}
-
-.pastel-puzzles {
-  background-image: url()
-}
-
-.surf-report {
-  background-image: url()
+.under-construction {
+  background-image: url(/assets/images/under-construction.png);
+  background-size: cover;
 }
 
 /* end portfolio project images */
