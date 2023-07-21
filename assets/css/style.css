@@ -238,6 +238,12 @@ main {
   background-size: cover;
 }
 
+.booklyn {
+  background-image: url(../images/booklyn.png);
+  background-size: auto;
+
+}
+
 .under-construction {
   display: flex;
   background-image: url(../images/under-construction.png);
