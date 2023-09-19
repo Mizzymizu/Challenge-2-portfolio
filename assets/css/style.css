@@ -249,6 +249,11 @@ main {
   background-size: contain;
 }
 
+.rustAndRedemption {
+  background-image: url(../images/Rust-and-Redemption.png);
+  background-size: auto;
+}
+
 #resume div img {
   padding-left: 13%;
 }
